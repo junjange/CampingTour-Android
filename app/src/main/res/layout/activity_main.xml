@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="캠핑 여행\n어디로 떠날까요?"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/textView"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/search_2"
+                    android:layout_gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/signUpUsername2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="떠나고 싶으니깐 일단 검색!!"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="10dp"
+            android:text="추천 캠핑장"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/error_img" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="주소"
+                            android:textSize="12dp" />
+                        <TextView
+                            android:id="@+id/push_camping_text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img2"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img3"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img4"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img5"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping6"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img6"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping7"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img7"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/push_camping8"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/push_camping_img8"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:src="@drawable/error_img"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/push_camping_text22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캠핑장 이름"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/push_camping_text23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="주소" />
+                        <TextView
+                            android:id="@+id/push_camping_text24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:text="전화번호"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F6EEEE"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+
+                android:text="우리 동네 캠핑장"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/btn_start_upds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="15dp">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
+                    android:layout_gravity="center"
+                    android:text="내위치"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hometown_camping1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hometown_camping_img1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@drawable/error_img"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑장 이름"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="주소" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="전화번호"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hometown_camping2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hometown_camping_img2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@drawable/error_img"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/hometown_camping_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑장 이름"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="주소" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="전화번호"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hometown_camping3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hometown_camping_img3"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@drawable/error_img"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/hometown_camping_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑장 이름"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="주소" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="전화번호"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hometown_camping4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hometown_camping_img4"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@drawable/error_img"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/hometown_camping_text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑장 이름"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="주소" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="전화번호"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hometown_camping5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hometown_camping_img5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@drawable/error_img"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/hometown_camping_text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑장 이름"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hometown_camping_text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="주소" />
+                <TextView
+                    android:id="@+id/hometown_camping_text15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="전화번호"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F6EEEE"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:text="문의, 건의사항은\n 메일과 리뷰로 알려주세요 :)"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
