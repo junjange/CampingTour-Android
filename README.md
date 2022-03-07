@@ -1,15 +1,14 @@
-<h1 align="center">🍀행운복권🍀</h1>
-<p align="center"><img src=https://blog.kakaocdn.net/dn/sNFao/btq8GRvxU8s/FwigRtYykehkfIdtMrvMR1/img.png
+<h1 align="center">🏕캠핑투어🏕</h1>
+<p align="center"><img src=https://blog.kakaocdn.net/dn/cGX4UV/btrdivIdoON/Aeo27enO8VjiMSuXfwMkpk/img.png
 "></p>
   
-  [행운복권 주요기능]
-* 로또 6/45, 연금복권 +720 회차별 당첨번호 확인
-* 로또 6/45, 연금복권 +720 QR코드 스캔
-* 동행 복권 구매 사이트 연결
-* 나만의 행운 번호 관리
-* 로또 6/45, 연금복권 +720, 메가밀리언(미국 복권) 랜덤 번호 생성
-* 복권 판매점 검색
+[캠핑투어 주요기능]
+* 캠핑장 실시간 예약현황 및 캠핑장 예약하기
+* 관광지, 계곡, 산, 바다, 숲등 키워드별 캠핑장 검색 기능
+* 글램핑 및 카라반 캠핑장 정보
+* 캠핑장 전화연결 기능
+* 각 지역별 캠핑장 상세 검색
 
 ## Google Play
 
-https://play.google.com/store/apps/details?id=com.junjange.lotto3
+https://play.google.com/store/apps/details?id=com.junjange.touring
