@@ -12,3 +12,25 @@
 ## Google Play
 
 https://play.google.com/store/apps/details?id=com.junjange.touring
+## 🛠️ ****Tech Stack****
+
+- Kotlin
+- Room
+- AWS Amplify
+- AWS Cognito
+- 공공 데이터 포털 오픈 API
+
+## ****⚙️ Architecture****
+
+- MVVM
+
+## 📌 ****Part****
+
+- 개인 프로젝트(기획, 개발, 디자인 등)
+
+## 💡 ****Learned****
+
+
+- **MVVM 패턴**에 대해서 더 심도 있게 학습하였다.
+- **AWS** 활용하여 로그인 기능과 회원가입 기능을 구현해보았다.
+- **공공 데이터 포털 오픈 API**를 사용하면서 데이터를 받아오는 방법을 알게되었다.
